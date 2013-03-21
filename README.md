@@ -1,0 +1,1 @@
+Contains Eagle projects for independent study PCB
