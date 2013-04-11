@@ -2105,7 +2105,7 @@ Digikey Part Number: 732-1029-1-ND</description>
 </deviceset>
 <deviceset name="ZENERDIODE">
 <gates>
-<gate name="ZENER" symbol="ZENERDIODE" x="0" y="0"/>
+<gate name="ZENER" symbol="ZENERDIODE" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOD-123">
@@ -14031,10 +14031,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C1" gate="G$1" x="22.86" y="33.02"/>
 <instance part="C2" gate="G$1" x="22.86" y="17.78"/>
 <instance part="Z1" gate="ZENER" x="33.02" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.3634" y="26.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="37.6174" y="26.67" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="Z2" gate="ZENER" x="33.02" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.3634" y="13.462" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="37.3634" y="13.716" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14131,7 +14131,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="12.7" y="12.7"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <pinref part="Z2" gate="ZENER" pin="A"/>
-<wire x1="22.86" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 <junction x="22.86" y="12.7"/>
 </segment>
 <segment>
@@ -14499,10 +14499,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="5.08" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <label x="12.954" y="36.576" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<pinref part="Z1" gate="ZENER" pin="C"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <junction x="22.86" y="35.56"/>
+<pinref part="Z1" gate="ZENER" pin="C"/>
 </segment>
 <segment>
 <label x="111.76" y="172.72" size="1.778" layer="95"/>
@@ -14570,10 +14570,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="Z2" gate="ZENER" pin="C"/>
-<pinref part="Z1" gate="ZENER" pin="A"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="20.32" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="H1" gate="G$1" pin="P1"/>
 <wire x1="15.24" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
@@ -14581,6 +14578,9 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C2" gate="G$1" pin="+"/>
 <junction x="22.86" y="20.32"/>
 <wire x1="33.02" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="Z2" gate="ZENER" pin="C"/>
+<pinref part="Z1" gate="ZENER" pin="A"/>
+<wire x1="33.02" y1="20.32" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <junction x="33.02" y="20.32"/>
 </segment>
 </net>
