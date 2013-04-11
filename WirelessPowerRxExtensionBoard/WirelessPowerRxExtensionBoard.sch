@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -69,31 +69,31 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="PLATING" color="10" fill="7" visible="yes" active="yes"/>
-<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="PLATING" color="10" fill="7" visible="no" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
 <layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -112,7 +112,7 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -13938,13 +13938,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="CFF" library="rcl" deviceset="C-US" device="C0201" value="33pF"/>
 <part name="U$1" library="crawford" deviceset="STEPUPCONVERTER" device=""/>
 <part name="U$2" library="crawford" deviceset="INDUCTOR" device=""/>
-<part name="R2" library="resistor" deviceset="R-US_" device="M0805" value="47K"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="M0805" value="47K"/>
 <part name="SUPPLY4" library="000_carrick" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="CPOL-US" device="E5-10.5" value="1.5F"/>
 <part name="C2" library="resistor" deviceset="CPOL-US" device="E5-10.5" value="1.5F"/>
 <part name="Z1" library="crawford" deviceset="ZENERDIODE" device=""/>
 <part name="Z2" library="crawford" deviceset="ZENERDIODE" device=""/>
+<part name="R1" library="carrick" deviceset="RES" device="0603" value="47k"/>
+<part name="R2" library="carrick" deviceset="RES" device="0603" value="47K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14025,9 +14025,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="CFF" gate="G$1" x="40.64" y="152.4"/>
 <instance part="U$1" gate="G$1" x="93.98" y="165.1"/>
 <instance part="U$2" gate="G$1" x="99.06" y="142.24" rot="R90"/>
-<instance part="R2" gate="G$1" x="29.21" y="80.01" rot="R90"/>
-<instance part="R1" gate="G$1" x="29.21" y="92.71" rot="R90"/>
-<instance part="SUPPLY4" gate="GND" x="29.21" y="69.85"/>
+<instance part="SUPPLY4" gate="GND" x="30.48" y="71.12"/>
 <instance part="C1" gate="G$1" x="22.86" y="33.02"/>
 <instance part="C2" gate="G$1" x="22.86" y="17.78"/>
 <instance part="Z1" gate="ZENER" x="33.02" y="30.48" smashed="yes" rot="R90">
@@ -14036,6 +14034,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="Z2" gate="ZENER" x="33.02" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.3634" y="13.716" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="R1" gate="G$1" x="27.94" y="96.52" rot="R90"/>
+<instance part="R2" gate="G$1" x="27.94" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14169,9 +14169,10 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="60.96" y="124.46"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="29.21" y1="74.93" x2="29.21" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="78.74" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AT3_PR_MISO" class="0">
@@ -14527,8 +14528,9 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="29.21" y1="97.79" x2="16.51" y2="97.79" width="0.1524" layer="91"/>
-<label x="17.78" y="99.06" size="1.778" layer="95"/>
+<wire x1="27.94" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="101.6" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
+<label x="12.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW" class="0">
@@ -14557,17 +14559,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="43.18" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="ATMEGA_3.3" gate="G$1" pin="PA0/ADC0/PCINT0"/>
-<wire x1="29.21" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="29.21" y1="87.63" x2="29.21" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="29.21" y1="86.36" x2="29.21" y2="85.09" width="0.1524" layer="91"/>
-<junction x="29.21" y="86.36"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
@@ -14582,6 +14573,18 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="Z1" gate="ZENER" pin="A"/>
 <wire x1="33.02" y1="20.32" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <junction x="33.02" y="20.32"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="ATMEGA_3.3" gate="G$1" pin="PA0/ADC0/PCINT0"/>
+<wire x1="45.72" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="86.36" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<junction x="27.94" y="88.9"/>
 </segment>
 </net>
 </nets>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14010,10 +14010,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="XBEE" gate="G$1" x="198.12" y="116.84"/>
 <instance part="H1" gate="G$1" x="12.7" y="27.94" rot="R270"/>
 <instance part="D1" gate="G$1" x="5.08" y="33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.5974" y="35.56" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="2.5654" y="31.496" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="D2" gate="G$1" x="5.08" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.5974" y="17.78" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="2.5654" y="13.716" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="SUPPLY1" gate="GND" x="12.7" y="10.16"/>
 <instance part="SUPPLY2" gate="GND" x="127" y="144.78"/>
@@ -14031,10 +14031,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C1" gate="G$1" x="22.86" y="33.02"/>
 <instance part="C2" gate="G$1" x="22.86" y="17.78"/>
 <instance part="Z1" gate="ZENER" x="33.02" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.5374" y="30.48" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="37.3634" y="26.67" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="Z2" gate="ZENER" x="33.02" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.5374" y="15.24" size="1.778" layer="95" rot="R90"/>
+<instance part="Z2" gate="ZENER" x="33.02" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.3634" y="13.462" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14130,6 +14130,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="12.7" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 <junction x="12.7" y="12.7"/>
 <pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="Z2" gate="ZENER" pin="A"/>
+<wire x1="22.86" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<junction x="22.86" y="12.7"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
@@ -14490,22 +14493,16 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="5.08" y="20.32"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="H1" gate="G$1" pin="P1"/>
-<wire x1="15.24" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<junction x="22.86" y="20.32"/>
-</segment>
-</net>
 <net name="VDOUBLE" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="5.08" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
-<label x="10.16" y="35.56" size="1.778" layer="95"/>
+<label x="12.954" y="36.576" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="Z1" gate="ZENER" pin="C"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<junction x="22.86" y="35.56"/>
 </segment>
 <segment>
 <label x="111.76" y="172.72" size="1.778" layer="95"/>
@@ -14569,6 +14566,22 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="29.21" y1="87.63" x2="29.21" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="29.21" y1="86.36" x2="29.21" y2="85.09" width="0.1524" layer="91"/>
 <junction x="29.21" y="86.36"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Z2" gate="ZENER" pin="C"/>
+<pinref part="Z1" gate="ZENER" pin="A"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="20.32" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="H1" gate="G$1" pin="P1"/>
+<wire x1="15.24" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<junction x="22.86" y="20.32"/>
+<wire x1="33.02" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<junction x="33.02" y="20.32"/>
 </segment>
 </net>
 </nets>
